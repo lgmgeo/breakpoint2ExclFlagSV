@@ -1,0 +1,19 @@
+# Byte-compiled
+__pycache__/
+*.pyc
+*.tmp
+*.log
+
+# Personal README
+README.vero
+*.swp
+
+# Personal test
+test_00*
+
+# VS Code
+.vscode/
+
+# Distribution PyPi
+dist/
+

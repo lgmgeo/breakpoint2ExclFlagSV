@@ -1,0 +1,30 @@
+[project]
+name = "breakpoint2exclflagsv"
+version = "0.1.0"
+description = "Flag SVs based on breakpoint overlap with exclusion regions"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "Geoffroy Véronique", email = "veronique.geoffroy@inserm.fr" }
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "breakpoint2bedsv>=1.2.0",
+    "pysam==0.22.1",
+]
+
+[project.scripts]
+breakpoint2exclflagsv = "breakpoint2exclflagsv.cli:main"
+
+[tool.poetry]
+packages = [
+    { include = "breakpoint2exclflagsv" }
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
